@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face("AGHelvetica", "../fonts/AGHelvetica/Regular/AGHelvetica-Regular", normal);
+@include font-face("AGHelvetica", "../fonts/AGHelvetica/Bold/AGHelvetica-Bold", bold);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/Bold/HelveticaNeueCyr-Bold", bold);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/Medium/HelveticaNeueCyr-Medium", 500);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr/Regular/HelveticaNeueCyr-Regular", normal);

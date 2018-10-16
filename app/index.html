@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Quiz Indigo</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon.ico?v=1" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./css/libs.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body id="main-page">
+
+  <div class="page-wrapper">
+
+    <div class="page-top"><i class="fa fa-angle-double-up"></i></div>
+    <a href="tel:+77479337503" id="callMe" class="call-me"><i class="fa fa-phone"></i></a>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="/" class="logo">
+            <img src="./img/EVOdream-automation.png" alt="">
+          </a>
+
+          <!-- <h3 class="header__title"></h3> -->
+
+          <!-- <div class="grow"></div> -->
+
+          <nav class="main-menu inverse">
+            <div class="container">
+              <ul>
+                <li class="link">
+                  <a href="#main">Преимущества "АmoCRM"</a>
+                </li>
+                <li class="link">
+                  <a href="#">Система управления</a>
+                </li>
+                <li class="link">
+                  <a href="#">CallbackHunter</a>
+                </li>
+                <li class="link">
+                  <a href="#">О компании</a>
+                </li>
+                <li class="link last">
+                  <a href="#contact">Контакты</a>
+                </li>
+                <li class="d-lg-none">
+                  <a href="tel:+77479337503" class="text-phone" id="phone_number">+7 747 933 75 03</a>            
+                </li>
+                <li class="d-lg-none">
+                  <a href="tel:+77273174382" class="text-phone" id="phone_number">+7 727 317 43 82</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать звонок</a>
+
+          <div class="header__phone d-none d-lg-block inverse">
+            <a href="tel:+77479337503" class="text-phone" id="phone_number">+7 747 933 75 03</a>
+            <a href="tel:+77273174382" class="text-phone" id="phone_number">+7 727 317 43 82</a>
+          </div>
+
+          <button class="hamburger hamburger--elastic hamburger--accessible">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
+    <div>
+      <div class="container">
+        <div class="quiz__title">Ответьте на 6 вопросов теста и узнайте <br>
+            как <span>увеличить продажи</span> в Вашем бизнесе, используя AmoCRM</div>
+      </div>
+    </div>
+
+    <div class="question-modal"  data-remodal-options="hashTracking: true">
+      <div class="container">
+          <button data-remodal-action="close" class="remodal-close remodal-close--white"></button>
+          <form action="/mail.php" method="post">
+            <input type="hidden" name="info" value="Quiz">
+        
+          <div class="question" id="question-1">
+            <div class="question__num">Вопрос <span>1</span>/6</div>
+            <div class="question__text">Укажите Вашу сферу деятельности:</div>
+            <input type="hidden" name="Вопрос1" value="Укажите Вашу сферу деятельности:">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-1.png" alt=""></div>
+                  <div class="sfera__title">Оптовые компании</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-2.png" alt=""></div>
+                  <div class="sfera__title">Строительство</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-3.png" alt=""></div>
+                  <div class="sfera__title">Производство</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-4.png" alt=""></div>
+                  <div class="sfera__title">Недвижимость</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-5.png" alt=""></div>
+                  <div class="sfera__title">IT-компании</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-6.png" alt=""></div>
+                  <div class="sfera__title">Консалтинг</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-7.png" alt=""></div>
+                  <div class="sfera__title">Маркетинг и реклама</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-8.png" alt=""></div>
+                  <div class="sfera__title">Финансовые услуги</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-9.png" alt=""></div>
+                  <div class="sfera__title">Обучающий курс</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-10.png" alt=""></div>
+                  <div class="sfera__title">Фитнес-клубы</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sfera-11.png" alt=""></div>
+                  <div class="sfera__title">Юридические услуги</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <textarea name="Ответ1" value="Другое" class="drugoe" placeholder="Введите текст*"></textarea>
+                  <div class="sfera__title">Другое</div>
+                </div>
+              </div>
+            </div>
+            <div class="question__error"></div>
+            <a href="#" class="perehod button" data-show="question-2" data-hide="question-1">Следующий вопрос</a>
+          </div>
+
+          <div class="question" id="question-2">
+            <div class="question__num">Вопрос <span>2</span>/6</div>
+            <div class="question__text">Где Вы ведете свою клиентскую базу?</div>
+            <input type="hidden" name="Вопрос1" value="Где Вы ведете свою клиентскую базу?">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/baza-1.png" alt=""></div>
+                  <div class="sfera__title">CRM</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/baza-2.png" alt=""></div>
+                  <div class="sfera__title">1С</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/baza-3.png" alt=""></div>
+                  <div class="sfera__title">Excel</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/baza-4.png" alt=""></div>
+                  <div class="sfera__title">На бумаге</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/baza-5.png" alt=""></div>
+                  <div class="sfera__title">Не веду</div>
+                </div>
+              </div>              
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <textarea name="Ответ1" value="Другое" class="drugoe" placeholder="Введите текст*"></textarea>
+                  <div class="sfera__title">Другое</div>
+                </div>
+              </div>
+            </div>
+            <div class="question__error"></div>
+            <a href="#" class="perehod button" data-show="question-3" data-hide="question-2">Следующий вопрос</a>
+          </div>
+
+          <div class="question" id="question-3">
+            <div class="question__num">Вопрос <span>3</span>/6</div>
+            <div class="question__text">Сколько человек работает в Вашем отделе продаж?</div>
+            <input type="hidden" name="Вопрос1" value="Сколько человек работает в Вашем отделе продаж?">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__num">2-4</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                    <div class="sfera__num">5-10</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                    <div class="sfera__num">11-25</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                    <div class="sfera__num">25+</div>
+                </div>
+              </div>
+            </div>
+            <div class="question__error"></div>
+            <a href="#" class="perehod button" data-show="question-4" data-hide="question-3">Следующий вопрос</a>
+          </div>
+
+          <div class="question" id="question-4">
+            <div class="question__num">Вопрос <span>4</span>/6</div>
+            <div class="question__text">Как Вы звоните клиентам?</div>
+            <input type="hidden" name="Вопрос1" value="Как Вы звоните клиентам?">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/call-1.png" alt=""></div>
+                  <div class="sfera__title">Городские телефоны</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/call-2.png" alt=""></div>
+                  <div class="sfera__title">Сотовые телефоны</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/call-3.png" alt=""></div>
+                  <div class="sfera__title">IP-телефония</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/call-4.png" alt=""></div>
+                  <div class="sfera__title">Не звоним</div>
+                </div>
+              </div>              
+            </div>
+            <div class="question__error"></div>
+            <a href="#" class="perehod button" data-show="question-5" data-hide="question-4">Следующий вопрос</a>
+          </div>
+
+          <div class="question" id="question-5">
+            <div class="question__num">Вопрос <span>5</span>/6</div>
+            <div class="question__text">Какие способы привлечения клиентов Вы используете? <br>
+              <span>(можно указать один или несколько вариантов)</span>
+            </div>
+            <input type="hidden" name="Вопрос1" value="Какие способы привлечения клиентов Вы используете?">
+            <div class="row">
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sposob-1.png" alt=""></div>
+                  <div class="sfera__title">Реклама в интернете</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sposob-2.png" alt=""></div>
+                  <div class="sfera__title">Реклама в СМИ</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sposob-3.png" alt=""></div>
+                  <div class="sfera__title">Реклама на улицах</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/call-3.png" alt=""></div>
+                  <div class="sfera__title">Холодные звонки</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <div class="sfera__img"><img src="./img/sposob-5.png" alt=""></div>
+                  <div class="sfera__title">Через знакомых</div>
+                </div>
+              </div>              
+              <div class="col-lg-3 col-md-4 col-6">
+                <div class="sfera">
+                  <textarea name="Ответ1" value="Другое" class="drugoe" placeholder="Введите текст*"></textarea>
+                  <div class="sfera__title">Другое</div>
+                </div>
+              </div>
+            </div>
+            <div class="question__error"></div>
+            <a href="#" class="perehod button" data-show="question-6" data-hide="question-5">Следующий вопрос</a>
+          </div>
+
+          <div class="question" id="question-6">
+            <div class="question__num">Вопрос <span>6</span>/6</div>
+            <div class="question__text">Есть ли у Вас сайт и поступают ли с него заявки? 
+            </div>
+            <input type="hidden" name="Вопрос1" value="Есть ли у Вас сайт и поступают ли с него заявки?">
+            <div class="sfera__content">
+              <div class="sfera sfera--zayavka">
+                <div class="sfera__zayavka">Есть сайт, <br>
+                    заявки поступают</div>
+              </div>
+              <div class="sfera sfera--zayavka">
+                <div class="sfera__zayavka">Есть сайт, <br>
+                    но заявки - редкость(</div>
+              </div>
+              <div class="sfera sfera--zayavka">
+                <div class="sfera__zayavka">Сайт в разработке</div>
+              </div>
+              <div class="sfera sfera--zayavka">
+                <div class="sfera__zayavka">Нет сайта</div>
+              </div>
+              <div class="sfera">
+                <textarea name="Ответ1" value="Другое" class="drugoe" placeholder="Введите текст*"></textarea>
+                <div class="sfera__title">Другое</div>
+              </div>
+            </div>
+            <div class="question__error"></div>
+            <a href="#" class="perehod perehod--red button" data-show="question-last" data-hide="question-6">Следующий вопрос</a>
+          </div>
+      
+          <div class="question d-none" id="question-2">
+            <div class="question__num">Вопрос 2/2</div>
+            <div class="question__text">Заполните поля</div>
+            <input type="hidden" name="Вопрос2" value="Заполните поля">
+            <label class="label">
+              <span>Количество сотрудников</span>
+              <input type="number" name="Количество_сотрудников" value="" required>
+            </label>      
+            <label class="label">
+              <span>Комментария</span>
+              <input type="text" name="Комментария" value="" required>
+            </label>      
+            <div class="question__error"></div>
+            <a href="#" class="perehod" data-show="question-last" data-hide="question-2">Завершить тест</a>
+          </div>      
+      
+          <div class="question d-none" id="question-last">
+          <div class="question__text">Введите контактные данные</div>
+            <div class="form form--vertical">
+              <div class="form__content">
+                <div class="input-div">
+                  <input type="text" class="input" name="name" placeholder="Введите имя" required>
+                  <span class="error-message">Заполните поле</span>
+                </div>
+                <div class="input-div">
+                  <input type="tel" class="input" name="phone" placeholder="Введите телефон*" required>
+                  <span class="error-message">Заполните поле</span>
+                </div>
+                <div class="form__info">
+                  * Ваши данные в безопасности <br>
+                  и не будут переданы третьим лицам
+                </div>
+                <button type="submit" class="button ajax-submit">Узнать результаты теста</button>
+              </div>          
+            </div>
+          </div>
+      
+        </form> 
+      </div>
+    </div>  
+
+    <!-- <section class="section s-main" id="main">
+      <div class="container">
+        <h1 class="s-main__title"></h1>
+        
+        <div class="form form--vertical wow slideInLeft">
+          <form action="/mail.php" method="post">
+            <div class="form__title">Собираетесь в путешествие, но не знаете как и с чего начать? Доверьтесь нам и сэкономьте!</div>
+            <div class="form__content">
+              <input type="hidden" name="info" value="Оставьте заявку на комплексные туристические услуги и получите их со скидкой в 20%!">
+
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Имя">
+              </div>
+
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required minlength="10">
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
+
+              <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section> -->
+
+    <!-- <section class="section s-test">
+      <div class="container">
+
+        <div class="form form--horizontal wow slideInUp">
+          <form action="/mail.php" method="post">
+            <div class="form__title">Собираетесь в путешествие, но не знаете как и с чего начать? Доверьтесь нам и сэкономьте!</div>
+            <div class="form__content">
+
+              <input type="hidden" name="info" value="Оставьте заявку на комплексные туристические услуги и получите их со скидкой в 20%!">
+
+              <div class="input-div">
+                <input type="text" class="input" name="name" placeholder="Имя">
+              </div>
+
+              <div class="input-div">
+                <input type="email" class="input" name="email" placeholder="E-mail *" required="">
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <div class="input-div">
+                <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="" minlength="10">
+                <span class="error-message">Заполните это поле</span>
+              </div>
+
+              <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
+            </div>
+            <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+          </form>
+        </div>
+
+      </div>
+    </section> -->
+
+    <footer class="footer inverse">
+      <div class="container">
+        <div class="footer__content">
+          <a href="/" class="logo">
+            <img src="./img/EVOdream-automation.png" alt="">
+          </a>
+
+          <div class="footer__address">
+            г. Алматы ул. Жандосова 98 <br>
+            уг.Навои БЦ "Навои Тауэрс",  <br>
+            2-этаж, 207 офис
+          </div>
+
+          <div class="footer__phone">
+            <a href="tel:+77479337503" class="text-phone" id="phone_number">+7 747 933 75 03</a> <br>
+            <a href="tel:+77273174382" class="text-phone" id="phone_number">+7 727 317 43 82</a> <br>
+            <a href="#" class="footer__link" data-remodal-target="zvonok-modal">Заказать звонок</a>
+          </div>
+
+          <div class="footer__comand">
+            © ТОО «EvoDream».   <br>
+            Все права защищены.   <br>
+            Копирование материалов запрещено! 
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="remodal remodal--small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close"></button>
+
+    <div class="remodal__title">Оставьте заявку, <br>и наш консультант Вам перезвонит</div>
+
+    <div class="form form--vertical">
+      <form action="/mail.php" method="post">
+        <div class="form__content">
+          <input type="hidden" name="info" value="Обратный звонок">
+
+          <div class="input-div">
+            <input type="text" class="input" name="name" placeholder="Имя">
+          </div>
+
+          <div class="input-div">
+            <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required minlength="10">
+            <span class="error-message">Заполните это поле</span>
+          </div>
+
+          <button class="button ajax-submit" type="submit" id="zakazat_zvonok">Заказать обратный звонок</button>
+
+          <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/libs.min.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
