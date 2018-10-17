@@ -160,7 +160,7 @@ $(document).ready(function () {
     }
   });
 
-  var $questionModal = $(".question-modal");
+  var $questionModal = $(".s-questions");
   $(".perehod").click(function(e) {
     e.preventDefault();
     var $this = $(this);
@@ -179,7 +179,7 @@ $(document).ready(function () {
         // Если выбран другое, то пользователь обьязан указать свой вариант
         if ($input.hasClass("drugoe")) {
           drugoeSelected = true;
-          var vawVariant = $input.closest(".checkbox").siblings(".ukazat").val();
+          var vawVariant = $input.closest(".checkbox").find(".ukazat").val();
           if (vawVariant && vawVariant.length > 0) {
             variantSelected = true;
           }
