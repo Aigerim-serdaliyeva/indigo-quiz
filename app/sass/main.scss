@@ -30,6 +30,10 @@
     margin-right: 50px;
     flex-shrink: 0;
   }
+
+  &__phone {
+    margin-left: 20px;
+  }
 }
 
 .footer {
@@ -105,7 +109,7 @@
   }
 
   li {
-    margin-right: 30px;
+    margin-right: 27px;
     letter-spacing: -0.5px;
     
     &.last {
@@ -156,12 +160,19 @@
   }
 }
 
-.question-modal {
+.s-questions {
   flex-grow: 1;
   margin-top: 35px;
   padding-bottom: 65px;
 
   .question {
+
+    &--form {
+      .button {
+        padding: 11px 28px;
+      }
+    }
+
     &__num {
       font-size: 20px;
       color: $accent;
@@ -189,13 +200,39 @@
     }
   }
 
+  .checkbox {
+    display: block;
+    [type="checkbox"], [type="radio"] {
+      display: none;
+  
+      &:checked + .sfera {
+        background-color: $aqua;
+        .sfera {
+          &__img {
+            &-1 {
+              display: none;
+            }
+            &-2 {
+              display: block;
+            }
+          }
+          &__num, &__title, &__zayavka {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
   .sfera {
     padding: 15px;
     border: 1px solid transparent;
     &--zayavka {
       padding: 5px;
-      max-width: 200px;
-      width: 100%;
+      // max-width: 200px;
+      width: 200px;
+      // width: 100%;
+      min-height: 74px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -203,16 +240,7 @@
     &:hover {
       border: 1px solid $aqua;
     }
-    &:active {
-      background-color: $aqua;
-      .sfera__num {
-        color: #fff;
-      }
-      .sfera__zayavka {
-        color: #fff;
-      }
-    }
-
+    
     &__img {
       text-align: center;
       margin: 0 auto 15px;
@@ -221,6 +249,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      &-2 {
+        display: none;
+      }
     }
 
     &__title {
@@ -238,6 +270,7 @@
     &__content {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
 
     &__zayavka {
@@ -262,12 +295,10 @@
     background-color: $aqua;
     margin: 35px auto 0;
     // display: inline-block;
-    // display: block;
+    display: block;
+    max-width: 190px;
     text-align: center;
-    &--red {
-      background-color: #ef4870;
-      border: 2px solid #ef4870;
-    }
+    
   }
 }
 
@@ -284,19 +315,19 @@
 }
 
 .s-thanks {
-  padding: 200px 0 100px 0;
   background-image: url("../img/thanks-back.jpg");
   flex-grow: 1;
+  display: flex;
   font-family: HelveticaNeueCyr, serif;
   font-weight: bold;
   color: #fff;
   text-align: center;
-    
-  &__title {
-    font-size: 36px;
-    font-weight: normal;
-    margin-bottom: 30px;
-  }
+   
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
 
   &__text {
     font-size: 36px;

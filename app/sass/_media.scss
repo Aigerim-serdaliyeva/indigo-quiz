@@ -32,9 +32,9 @@
 
 	.main-menu {
     display: none;
-    background-color: #fff;
+    background-color: $accent;
     position: fixed;
-    top: 89px;
+    top: 54px;
     left: 0;
     right: 0;
     text-align: left;
@@ -105,10 +105,50 @@
     }      
   }
 
+  .quiz {
+    &__title {
+      font-size: 20px;
+    }
+  }
+
   .s {
-    &-main {
-      
-    } 
+    &-questions {
+
+      .question {
+        &__num, &__text {
+          font-size: 18px;
+          margin-left: 0;
+          margin-bottom: 15px;
+        }
+
+      }
+
+      .sfera {
+        padding: 5px;
+
+        &__content {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        &--zayavka {
+          max-width: none;
+          margin: 0 auto;
+          text-align: center;
+        }
+
+        &__title, {
+          font-size: 15px;
+        }
+        &__num {
+          font-size: 30px;
+        }
+      }
+
+      .drugoe {
+        width: 100%;
+      }
+    }
   }
 }
 
